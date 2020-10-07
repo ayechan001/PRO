@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.DetailFragment">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detailcard1"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/detailimage"
+                android:layout_width="141dp"
+                android:layout_height="123dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mg Mg"
+                android:textSize="22dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                app:layout_constraintLeft_toRightOf="@id/detailimage"
+                android:layout_marginLeft="20dp"/>
+            <ImageButton
+                android:id="@+id/debutton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/detv1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Gender :"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailimage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/deet1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22dp"
+                android:layout_marginRight="150dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detailimage" />
+
+            <TextView
+                android:id="@+id/detv2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Age :"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detv1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/deet2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginRight="150dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/deet1" />
+
+            <TextView
+                android:id="@+id/detv3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Date of Birth :"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detv2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/deet3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginRight="150dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/deet2" />
+
+            <TextView
+                android:id="@+id/detv4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Phno :"
+                android:textSize="22dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detv3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/deet4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginRight="150dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/deet3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@id/detailcard1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/desecondtv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Description :"
+                android:textSize="22dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/desecondet"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginRight="150dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
